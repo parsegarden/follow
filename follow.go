@@ -46,14 +46,14 @@ type QueryParameters struct {
 }
 
 type Response struct {
-	LastSeq int      `json:"last_seq,omitempty"`
+	LastSeq string   `json:"last_seq,omitempty"`
 	Results []Result `json:"results,omitempty"`
 }
 
 type Result struct {
 	Changes []Rev  `json:"changes,omitempty"`
 	Id      string `json:"id,omitempty"`
-	Seq     int    `json:"seq,omitempty"`
+	Seq     string `json:"seq,omitempty"`
 	Deleted bool   `json:"deleted,omitempty"`
 }
 
