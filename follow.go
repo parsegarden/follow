@@ -39,7 +39,7 @@ type QueryParameters struct {
 	AttEncodingInfo bool     `url:"att_encoding_info,omitempty"`
 	LastEventId     int64    `url:"last-event-id,omitempty"`
 	Limit           int      `url:"limit,omitempty"`
-	Since           int      `url:"since,omitempty"`
+	Since           string   `url:"since,omitempty"`
 	Style           string   `url:"style,omitempty"`
 	Timeout         int64    `url:"timeout,omitempty"`
 	View            string   `url:"view,omitempty"`
