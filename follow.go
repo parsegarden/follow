@@ -55,6 +55,7 @@ type Result struct {
 	Id      string `json:"id,omitempty"`
 	Seq     string `json:"seq,omitempty"`
 	Deleted bool   `json:"deleted,omitempty"`
+  Doc     interface{} `json:"doc,omitempty"`
 }
 
 type Rev struct {
